@@ -6,151 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey Feeling Alone</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            margin: 0;
-            padding: 0;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
             background-color: black;
-            height: 100vh;
         }
 
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-            padding-top: 50px;
+        .column {
+            margin-top: 0%;
+            margin: auto;
+            width: 65%;
+            padding: 0px;
         }
 
-        .container2 {
-            position: relative;
-            text-align: center;
-            color: white;
-            padding-top: 560px;
-            padding-right: 0px;
+        .column2 {
+            margin: auto;
+            margin-left: 40%;
+            width: 100%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+            align-items: baseline;
         }
 
         .button {
-            background-color: #382a2a;
             border: none;
             color: white;
-            padding: 15px 32px;
-            text-align: center;
             text-decoration: none;
-            display: inline-block;
+            padding: 10px 26px;
+            text-align: center;
+            display: inline;
             font-size: 16px;
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin: 0px 2px;
             cursor: pointer;
-            border-radius: 10px;
-        }
-
-        .button:hover {
-            background-color: #465202;
         }
 
         .button1 {
-            margin-left: 125px;
-            top: 150%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            text-decoration: none;
+            background-color: #aa8904;
         }
 
+        /* Green */
         .button2 {
-            margin-left: 22px;
-            top: 300%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background-color: #aa8904;
         }
 
+        /* Green */
         .button3 {
-            margin-left: 10px;
-            top: 450%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .img1{
-            width: 85%; max-width: 100vw; position: absolute; bottom: 0; left: 180px; z-index: -1;
-        }
-        .img2{
-            width: 85%; max-width: 100vw; position: absolute; top: 1000px; left: 180px; z-index: -1;
-        }
-        .img3{
-            width: 85%; max-width: 100vw; position: absolute; top: 1950px; left: 180px; z-index: -1;
+            background-color: #aa8904;
         }
 
         /* Media Query for Mobile Devices */
         @media only screen and (max-width: 600px) {
-            .container {
-                padding-top: 20px;
-            }
 
             .button {
-                font-size: 10px;
+                padding: 10px 25px;
+                font-size: 15px;
             }
 
-            .button1 {
-                margin-left: 84px;
+            .column2 {
+                margin: auto;
+                margin-left: 8%;
+                width: 100%;
+                padding: 5px;
             }
 
-            .button2 {
-                margin-left: 10px;
-            }
-
-            .button3 {
-                margin-left: 10px;
-            }
-
-
-            .container2 {
-                position: relative;
-                text-align: center;
-                color: white;
-                padding-top: 540px;
-                padding-left: 0px;
-            }
-            .img1{
-            width: 100%; max-width: 100vw; position: absolute;top:0; bottom: 0; left: 0px; z-index: -1; src:url('mobile1.png')
-            }
-            .img2{
-                width: 100%; max-width: 100vw; position: absolute; top: 665px; left: 0px; z-index: -1;
-            }
-            .img3{
-                width: 100%; max-width: 100vw; position: absolute; top: 900px; left: 0px; z-index: -1;
+            .column {
+                margin: auto;
+                width: 100%;
+                padding: 5px;
             }
         }
+
+        /* Blue */
     </style>
 </head>
 
 <body>
-    <div class="container2">
-        <audio autoplay controls loop>
-            <source src="background_music.mp3">
-        </audio>
-    </div>
 
-    <div class="container">
-        <a href="https://twitter.com/monkeyfeelalone"><button class="button button1" >Twitter</button></a>
-        <a href="https://t.me/monkeyfeelingalone"><button class="button button2" >Telegram</button></a>
-        <a href="https://t.me/monkeyfeelingalone"><button class="button button3" >Charts</button></a>
-        <p style="margin-top: 5px; font-size: small;"><b>CA:</b></p>
-        
-        
-        
+    <div class="row">
+        <div class="column">
+            <img id="background-image" src="1.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column2">
+            <a style="text-decoration: none;" href="https://twitter.com/monkeyfeelalone"><button
+                    class="button button1">Twitter</button></a>
+            <a style="text-decoration: none;" href="https://t.me/monkeyfeelingalone"><button
+                    class="button button2">Telegram</button></a>
+            <a style="text-decoration: none;" href="https://t.me/monkeyfeelingalone"><button
+                    class="button button3">Charts</button></a>
+        </div>
+        <div class="column2">
+            <audio autoplay controls loop>
+                <source src="background_music.mp3">
+            </audio>
+        </div>
+        <div class="column2">
+            <p style="margin-top: 5px; font-size: small; color: antiquewhite;"><b>CA:0x00000000000000000000</b></p>
+        </div>
+        <div class="column">
+            <img id="background-image2" src="2.png" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img id="background-image" src="3.png" alt="Mountains" style="width:100%">
+        </div>
     </div>
-    <img id="background-image" src="1.png" alt="Bottom Image" class="img1">
-    <img id="background-image2" src="2.png" alt="Bottom Image" class="img2">
-    <img id="background-image3" src="3.png" alt="Bottom Image" class="img3">
     <script>
         // JavaScript to change the background image source if on a mobile device
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          document.getElementById('background-image').src = 'mobile1.png';
-          document.getElementById('background-image2').src = 'mobile2.png';
-          document.getElementById('background-image3').src = 'mobile3.png';
+            document.getElementById('background-image').src = 'mobile1.png';
+            document.getElementById('background-image2').src = 'mobile2.png';
+            document.getElementById('background-image3').src = 'mobile3.png';
         }
-      </script>
+    </script>
 </body>
 
 </html>
