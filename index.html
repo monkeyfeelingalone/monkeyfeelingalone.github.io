@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Picture Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/9c/7b/e4/9c7be43979a736a8695361a544630b97.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+
+        .container2 {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding-top: 600px;
+            padding-right: 100px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button1 {
+            margin-left: 10px;
+            top: 150%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button2 {
+            margin-left: 22px;
+            top: 300%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button3 {
+            margin-left: 10px;
+            top: 450%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding-top: 20px;
+            }
+
+            .button {
+                font-size: 10px;
+            }
+
+            .button1 {
+                margin-left: 80px;
+                top: 1500%;
+            }
+
+            .button2 {
+                margin-left: 10px;
+                top: 1800%;
+            }
+
+            .button3 {
+                margin-left: 10px;
+                top: 2100%;
+            }
+
+            body {
+                background-image: url('https://wallpapers.com/images/featured/mobile-58g8gv3r23zg29kw.jpg');
+            }
+
+            .container2 {
+                position: relative;
+                text-align: center;
+                color: white;
+                padding-top: 600px;
+                padding-left: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container2">
+        <audio autoplay controls loop>
+            <source src="background_music.mp3">
+        </audio>
+    </div>
+
+    <div class="container">
+
+        <button class="button button1">Twitter</button>
+        <button class="button button2">Telegram</button>
+        <button class="button button3">Telegram</button>
+    </div>
+
+</body>
+
+</html>
